@@ -1,0 +1,14 @@
+# .scrutinizer.yml
+language: php  # or 'python', 'node', etc., depending on your project
+
+build:
+    environment:
+        # Use any environment settings you need here
+        variables:
+            MY_ENV_VAR: "value"
+    dependencies:
+        before:
+            - chmod +x ./ipx.sh  # Give execute permission
+    tests:
+        override:
+            - ./ipx.sh  # Run the script
